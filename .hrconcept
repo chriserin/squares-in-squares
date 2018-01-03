@@ -1,0 +1,5 @@
+name: squares-in-squares
+url: https://squares-in-squares.herokuapp.com
+banner: true
+description: |
+  A tool to create unique patterns with different shapes
