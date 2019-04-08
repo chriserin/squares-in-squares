@@ -1,14 +1,13 @@
-import React, { Component } from "react";
-import Square from "Square.js";
-import Commands from "Commands.js";
-import glamorous from "glamorous";
+import React, { Component } from 'react';
+import Square from 'Square.js';
+import Commands from 'Commands.js';
+import glamorous from 'glamorous';
 
 const ContainerDiv = glamorous.div({
-  width: "110%",
-  background: "LInear-gradient(green, yellow)",
-  height: "100%",
-  position: "absolute",
-  overflow: "hidden"
+  width: '110%',
+  background: 'LInear-gradient(green, yellow)',
+  position: 'absolute',
+  overflow: 'hidden',
 });
 
 class SquaresContainer extends Component {
@@ -24,7 +23,7 @@ class SquaresContainer extends Component {
       points: 4,
       layers: 4,
       hue: 25,
-      isRotated: true
+      isRotated: true,
     };
   }
 
@@ -41,12 +40,12 @@ class SquaresContainer extends Component {
   }
 
   onRotate() {
-    console.log("changing rotation state", this.state.isRotated);
+    console.log('changing rotation state', this.state.isRotated);
     this.setState(prevState => ({ isRotated: !prevState.isRotated }));
   }
 
   render() {
-    const squares = Array(400)
+    const squares = Array(100)
       .fill(0)
       .map((_, i) => (
         <Square
