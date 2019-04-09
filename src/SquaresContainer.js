@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Square from 'Square.js';
-import Commands from 'Commands.js';
+import Square from './Square.js';
+import Commands from './Commands.js';
 import glamorous from 'glamorous';
 
 const ContainerDiv = glamorous.div({
